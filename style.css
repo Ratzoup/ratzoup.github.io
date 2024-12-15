@@ -1,17 +1,58 @@
-{
+html, body, button{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Cinzel Decorative', serif;
+    font-family: 'Diablo Light', serif;
+}
+.menu-buttons {
+    position: relative; 
+    width: 100vw;
+    height: 100vh;
 }
 body {
     overflow: hidden;
 }
+.btn {
+    position: absolute;
+    background: linear-gradient(to bottom, #654321, #3e2c15);
+    color: #e6d8b7;
+    border: 2px solid #2a1c0f;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-shadow: 1px 1px 3px #000;
+}
+.btn-1 {
+    top: 28%;
+    left: 30%;
+    transform: rotate(20deg);
+}
+
+.btn-2 {
+    top: 30%;
+    right: 30%; 
+    transform: rotate(-20deg);
+}
+
+.btn-3 {
+    bottom: 42%;
+    left: 25%;
+}
+.btn-4 {
+    bottom: 10%;
+    right: 47%;
+    transform: rotate(90deg);
+}
+.btn:hover {
+    transform: rotate(0deg) scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+}
 .background {
-    background: url('image.png') no-repeat center center fixed;
+    background: url('01.png') no-repeat center center fixed;
     background-size: cover;
-    width: 1920vw;
-    height: 1080vh;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,12 +65,6 @@ body {
     padding: 20px;
     border: 3px solid #4c3e2e;
     box-shadow: 0 0 10px #000;
-}
-.logo {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    color: #e6d8b7; 
 }
 .btn {
     background: linear-gradient(to bottom, #654321, #3e2c15);
